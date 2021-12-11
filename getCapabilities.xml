@@ -116,7 +116,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:confine_comunale___municipal_boundary</Layers>
+				<Layers>GH:google_satellite</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -126,7 +126,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:confine_comunale___municipal_boundary</Layers>
+				<Layers>GH:google_satellite</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -136,7 +136,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:google_satellite</Layers>
+				<Layers>GH:confine_comunale___municipal_boundary</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -146,12 +146,12 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:google_satellite</Layers>
+				<Layers>GH:confine_comunale___municipal_boundary</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<CustomLayer>
-				<Name>GH:edificio_religioso___religious_building</Name>
-				<Title>edificio_religioso___religious_building</Title>
+				<Name>GH:localita____neighborhood</Name>
+				<Title>localita____neighborhood</Title>
 				<Operation type="csv">1</Operation>
 			</CustomLayer>
 			<CustomLayer>
@@ -160,13 +160,8 @@
 				<Operation type="csv">1</Operation>
 			</CustomLayer>
 			<CustomLayer>
-				<Name>GH:localita____neighborhood</Name>
-				<Title>localita____neighborhood</Title>
-				<Operation type="csv">1</Operation>
-			</CustomLayer>
-			<CustomLayer>
-				<Name>GH:luogo_d_interesse___place_of_interest</Name>
-				<Title>luogo_d_interesse___place_of_interest</Title>
+				<Name>GH:castello___castle</Name>
+				<Title>castello___castle</Title>
 				<Operation type="csv">1</Operation>
 			</CustomLayer>
 			<CustomLayer>
@@ -179,29 +174,39 @@
 				<Title>punto_panoramico___viewpoint</Title>
 				<Operation type="csv">1</Operation>
 			</CustomLayer>
+			<CustomLayer>
+				<Name>GH:area_archeologica___archaeological_area</Name>
+				<Title>area_archeologica___archaeological_area</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
+			<CustomLayer>
+				<Name>GH:edificio_religioso___religious_building</Name>
+				<Title>edificio_religioso___religious_building</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
+			<CustomLayer>
+				<Name>GH:luogo_d_interesse___place_of_interest</Name>
+				<Title>luogo_d_interesse___place_of_interest</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
+			<CustomLayer>
+				<Name>GH:area_attrezzata___pic_nic_area</Name>
+				<Title>area_attrezzata___pic_nic_area</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
+			<CustomLayer>
+				<Name>GH:area_di_parcheggio___parking_area</Name>
+				<Title>area_di_parcheggio___parking_area</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
+			<CustomLayer>
+				<Name>GH:attivita__e_strutture_ricettive___activities_and_accommodation_structures</Name>
+				<Title>attivita__e_strutture_ricettive___activities_and_accommodation_structures</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
 		</VendorSpecificCapabilities>
 		<UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"></UserDefinedSymbolization>
 		<Layer>
-			<Layer queryable="1" opaque="0">
-				<Name>GH:confine_comunale___municipal_boundary</Name>
-				<Title>confine_comunale___municipal_boundary</Title>
-				<Abstract>GH:confine_comunale___municipal_boundary ABSTRACT</Abstract>
-				<KeywordList>
-					<Keyword>group˸shp˸˸˸//github.com/CARTOGIS88/Mappia_Example/releases/download/Map_Download/_municipal_boundary.zip˸notListing˸˸maxZoom˸5</Keyword>
-				</KeywordList>
-				<SRS>EPSG:4326</SRS>
-				<LatLonBoundingBox minx="12.050073963015121" miny="42.92846625078312" maxx="12.267126112846459" maxy="43.01588933450539"></LatLonBoundingBox>
-				<BoundingBox SRS="EPSG:4326" minx="748879.7107999995" miny="4758037.6786" maxx="766265.0946000004" maxy="4767106.6764"></BoundingBox>
-				<Style>
-					<Name>1</Name>
-					<Title>1</Title>
-					<Abstract></Abstract>
-					<LegendURL width="20" height="20">
-						<Format>image/png</Format>
-						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=confine_comunale___municipal_boundary"></OnlineResource>
-					</LegendURL>
-				</Style>
-			</Layer>
 			<Layer queryable="1" opaque="0">
 				<Name>GH:google_satellite</Name>
 				<Title>google_satellite</Title>
@@ -219,6 +224,26 @@
 					<LegendURL width="20" height="20">
 						<Format>image/png</Format>
 						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=google_satellite"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:confine_comunale___municipal_boundary</Name>
+				<Title>confine_comunale___municipal_boundary</Title>
+				<Abstract>GH:confine_comunale___municipal_boundary ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group˸shp˸˸˸//github.com/CARTOGIS88/Mappia_Example/releases/download/Map_Download/_municipal_boundary.zip˸notListing˸˸maxZoom˸5</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="12.050073963015121" miny="42.92846625078312" maxx="12.267126112846459" maxy="43.01588933450539"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="748879.7107999995" miny="4758037.6786" maxx="766265.0946000004" maxy="4767106.6764"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=confine_comunale___municipal_boundary"></OnlineResource>
 					</LegendURL>
 				</Style>
 			</Layer>
